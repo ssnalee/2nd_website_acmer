@@ -1,0 +1,304 @@
+@charset "utf-8";
+.hideClass {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+
+#Wrap {
+  position: relative;
+}
+/* header */
+#headerWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 149px;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 9995;
+}
+
+#headerWrap > div {
+  width: 100%;
+  height: 149px;
+  background-color: rgb(255, 255, 255);
+}
+#headerWrap > div > header {
+  /* width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative;
+}
+header > h1 {
+  float: left;
+}
+header > h1 > a > img {
+  width: 200px;
+}
+header > nav {
+  float: right;
+  width: 897px;
+  position: relative;
+  padding-top: 68px;
+}
+#mainUl {
+  display: flex;
+}
+#mainUl > li {
+  margin-right: 15px;
+  position: relative;
+  display: block;
+  padding-right: 30px;
+  font: 14px "Hahmlet", sans-serif;
+  color: #000;
+}
+#mainUl > li > ul {
+  position: absolute;
+  left: 0;
+  top: 66px;
+  display: none;
+}
+#mainUl > li > ul > li {
+  border-bottom: 1px dotted rgb(230, 227, 227);
+}
+#mainUl > li > ul > li > a {
+  font: 14px/30px "Hahmlet", sans-serif;
+  color: #000;
+}
+#mainUl > li > ul > li > a:hover {
+  color: rgb(255, 0, 0);
+}
+header > nav > ul:nth-child(4) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header > nav > ul:nth-child(4) > li {
+  display: inline-block;
+  margin-left: 26px;
+}
+header > nav > ul:nth-child(4) > li > a {
+  font: 14px "Hahmlet", sans-serif;
+  color: #000;
+}
+/* main */
+#box02 > dl > dt.selectted {
+  background-color: antiquewhite;
+  color: #000;
+}
+.selectted02 {
+  background-color: rgb(73, 100, 75);
+  border-radius: 5px 5px 0px 0px;
+}
+.FadeIN {
+  animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#box01 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../img/b.01.PNG") no-repeat center fixed;
+  background-size: 100% 100%;
+}
+#box01 > h3 {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  font: 60px/80px "Hahmlet", sans-serif;
+  color: #fff;
+  text-shadow: rgb(121, 120, 120) 1px 0 10px;
+  z-index: 999;
+}
+#box01 > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font: 30px "Hahmlet", sans-serif;
+  text-align: center;
+}
+#box01 > p > span {
+  font: 45px "Hahmlet", sans-serif;
+}
+#box02 {
+  margin: 0 auto;
+  /* background-color: antiquewhite; */
+  padding-bottom: 40px;
+}
+#box02 > h4 {
+  text-align: center;
+  font: 60px/80px "Hahmlet", sans-serif;
+  padding: 40px 0;
+}
+#box02 > dl {
+  width: 95%;
+  /* width: 1200px; */
+  margin: 0 auto;
+}
+#box02 > dl > dt {
+  font: 40px/80px "Hahmlet", sans-serif;
+  padding: 20px 0;
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 5px;
+}
+#box02 > dl > dd {
+  font: 25px "Hahmlet", sans-serif;
+  padding: 20px;
+}
+#box03 {
+  padding: 40px 0;
+  background-color: rgb(214, 231, 187);
+}
+#box03 > ul {
+  display: flex;
+  width: 95%;
+  /* width: 1200px; */
+  margin: 0 auto;
+}
+#box03 > ul > li {
+  width: 24%;
+  margin: 0 auto;
+  background-color: rgb(163, 174, 140);
+  border-radius: 5px;
+  color: #fff;
+}
+#box03 > ul > li > h5 {
+  text-align: center;
+  font: 25px "Hahmlet", sans-serif;
+  padding: 40px 0;
+}
+#box03 > ul figure {
+}
+#box03 > ul figure > img {
+  width: 100%;
+  height: 300px;
+}
+#box03 > ul figure > figcaption {
+  font: 20px "Hahmlet", sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+#box04 {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 40px;
+  background-color: rgb(173, 209, 216);
+}
+#box04 > h4 {
+  font: 60px/80px "Hahmlet", sans-serif;
+  text-align: center;
+  padding: 40px 0;
+}
+#box04 > figure {
+  width: 95%;
+  /* width: 1200px; */
+  margin: 0 auto;
+}
+#box04 > figure > img {
+  width: 100%;
+}
+#box04 > dl {
+  width: 95%;
+  /* width:1200px; */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+#box04 > dl > dt {
+  float: left;
+  width: 30%;
+  text-align: right;
+}
+#box04 > dl > dt > img {
+}
+#box04 > dl > dd {
+  float: right;
+  font: 25px "Hahmlet", sans-serif;
+  width: 65%;
+}
+
+/* footer */
+#footerWrap {
+  padding: 26px 0 70px;
+  background-color: rgb(130, 130, 130);
+}
+#footerWrap > footer {
+  /* width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+footer > dl {
+  margin-bottom: 25px;
+}
+footer > dl > dt {
+  float: left;
+}
+footer > dl > dt > img {
+  width: 250px;
+  /* height: 140px; */
+}
+footer > dl > dd {
+  float: right;
+  padding-top: 40px;
+}
+footer > dl > dd > ul {
+}
+footer > dl > dd > ul > li {
+  display: inline-block;
+  border-left: 1px solid #fff;
+  padding: 0 29px;
+}
+footer > dl > dd > ul > li:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+footer > dl > dd > ul > li > a {
+  font: 14px "Hahmlet", sans-serif;
+  color: #000;
+}
+footer > div {
+  clear: both;
+  width: 766px;
+  float: left;
+  font: 14px/22px "Hahmlet", sans-serif;
+}
+footer > div > address {
+  display: inline;
+  font-style: normal;
+}
+footer > div > dl {
+  display: inline;
+}
+footer > div > dl > dt {
+  display: inline;
+}
+footer > div > dl > dd {
+  display: inline;
+}
+footer > div > small {
+  display: block;
+}

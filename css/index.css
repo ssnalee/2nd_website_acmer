@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+.hideClass {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+}
+
+#Wrap {
+  position: relative;
+}
+.cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 9999;
+  background-color: rgb(255, 255, 255);
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.3s;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+.cursor.active {
+  transform: scale(20);
+}
+
+/* header */
+#headerWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 149px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 9995;
+}
+
+#headerWrap > div {
+  width: 100%;
+  height: 149px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#headerWrap > div > header {
+  /* width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative;
+}
+header > h1 {
+  float: left;
+}
+header > h1 > a > img {
+  width: 200px;
+}
+header > nav {
+  float: right;
+  width: 897px;
+  position: relative;
+  padding-top: 68px;
+}
+#mainUl {
+  display: flex;
+}
+#mainUl > li {
+  margin-right: 15px;
+  position: relative;
+  display: block;
+  padding-right: 30px;
+  font: 14px "Hahmlet", sans-serif;
+  color: #000;
+}
+#mainUl > li > ul {
+  position: absolute;
+  left: 0;
+  top: 66px;
+  display: none;
+}
+#mainUl > li > ul > li {
+  border-bottom: 1px dotted rgb(230, 227, 227);
+}
+#mainUl > li > ul > li > a {
+  font: 14px/30px "Hahmlet", sans-serif;
+  color: #000;
+}
+#mainUl > li > ul > li > a:hover {
+  background-color: #fff;
+  color: rgb(252, 102, 102);
+}
+header > nav > ul:nth-child(4) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header > nav > ul:nth-child(4) > li {
+  display: inline-block;
+  margin-left: 26px;
+}
+header > nav > ul:nth-child(4) > li > a {
+  font: 14px "Hahmlet", sans-serif;
+  color: #000;
+}
+
+/* main */
+section {
+}
+section > div {
+  width: 100%;
+  height: 100vh;
+}
+section > div#Acmer {
+  background-color: rgb(255, 247, 132);
+  position: relative;
+}
+div#Acmer > h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  top: 40%;
+  font: 40px/60px "Hahmlet", sans-serif;
+  color: rgb(101, 102, 95);
+  text-align: center;
+  margin-top: -40px;
+}
+div#Acmer > h3 > span {
+  font: bold 70px/100px "Hahmlet", sans-serif;
+  color: rgb(255, 255, 255);
+}
+section > div#box01 {
+  background-color: rgb(239, 247, 175);
+}
+section > div#box02 {
+  background-color: rgb(255, 212, 147);
+}
+section > div#box03 {
+  background-color: rgb(243, 252, 222);
+}
+section > div#box04 {
+  background-color: rgb(183, 245, 253);
+}
+/* section  공통부분 */
+section > div > article {
+  /* width: 1200px; */
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+section > div > article > div {
+  position: absolute;
+  width: 50%;
+  padding: 80px 70px 60px;
+  box-sizing: border-box;
+  background-color: rgba(253, 205, 205, 0.6);
+}
+section > div > article > div > h4 {
+  font: bold 60px/50px "Hahmlet", sans-serif;
+  color: #fff;
+  margin-bottom: 34px;
+  text-align: center;
+}
+section > div > article > div > p {
+  font: 40px/40px "Hahmlet", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+section > div > article > div > p > span {
+  font: 45px "Hahmlet", sans-serif;
+  color: #fff;
+}
+
+/* 각각의 틀린부분 */
+div#box01 > article > img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 50%;
+  transform: translate(0%, -50%);
+}
+div#box01 > article > div {
+  right: 0;
+  bottom: 50%;
+  transform: translate(0%, 50%);
+  height: 50%;
+}
+div#box02 > article > img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50%;
+  transform: translate(0, -50%);
+}
+div#box02 > article > div {
+  left: 0;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(0%, -50%);
+}
+div#box03 > article > img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 50%;
+  transform: translate(0%, -50%);
+}
+div#box03 > article > div {
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+div#box03 > article > div > h4 {
+  margin-bottom: 70px;
+}
+div#box03 > article > div > p {
+  font: 40px/80px "Nanum Pen Script", sans-serif;
+}
+div#box04 > article > img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50%;
+  transform: translate(0%, -50%);
+}
+div#box04 > article > div {
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+div#box04 > article > div > h4 {
+  margin-bottom: 70px;
+}
+div#box04 > article > div > p {
+  font: 40px/80px "Nanum Pen Script", sans-serif;
+}
+/* aside */
+aside {
+  position: fixed;
+  right: 10px;
+  top: 40%;
+  z-index: 999;
+}
+aside > ul {
+}
+aside > ul > li {
+  margin-bottom: 30px;
+}
+aside > ul > li.active a {
+  background-color: #fff;
+}
+aside > ul > li > a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+/* footer */
+#footerWrap {
+  padding: 26px 0 70px;
+  background-color: rgb(196, 190, 134);
+}
+#footerWrap > footer {
+  /* width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+footer > dl {
+  margin-bottom: 25px;
+}
+footer > dl > dt {
+  float: left;
+}
+footer > dl > dt > img {
+  width: 250px;
+  /* height: 140px; */
+}
+footer > dl > dd {
+  float: right;
+  padding-top: 40px;
+}
+footer > dl > dd > ul {
+}
+footer > dl > dd > ul > li {
+  display: inline-block;
+  border-left: 1px solid #fff;
+  padding: 0 29px;
+}
+footer > dl > dd > ul > li:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+footer > dl > dd > ul > li > a {
+  font: 14px "Hahmlet", sans-serif;
+  color: #fff;
+}
+footer > div {
+  clear: both;
+  width: 766px;
+  float: left;
+  font: 14px/22px "Hahmlet", sans-serif;
+  color: #fff;
+}
+footer > div > address {
+  display: inline;
+  font-style: normal;
+}
+footer > div > dl {
+  display: inline;
+}
+footer > div > dl > dt {
+  display: inline;
+}
+footer > div > dl > dd {
+  display: inline;
+}
+footer > div > small {
+  display: block;
+}

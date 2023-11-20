@@ -1,0 +1,665 @@
+@media screen and (min-width: 1200px) {
+  #headerWrap > div > header {
+    width: 1200px;
+  }
+  section > div > article {
+    width: 1200px;
+  }
+  #footerWrap > footer {
+    width: 1200px;
+  }
+  /*  */
+}
+
+/*  */
+@media screen and (max-width: 1199px) and (min-width: 780px) {
+  .cursor {
+    display: none;
+  }
+  /* header */
+  #headerWrap {
+    height: 200px;
+  }
+  #headerWrap > div > header {
+    padding: 10px 0;
+  }
+  #headerWrap > div {
+    height: 200px;
+  }
+  header > h1 {
+    float: none;
+    text-align: center;
+  }
+  header > h1 > a > img {
+    width: 150px;
+  }
+  header > nav {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+  }
+  #mainUl {
+    width: 100%;
+  }
+  #mainUl > li {
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 18%;
+    text-align: center;
+  }
+  #mainUl > li > ul {
+    left: 50px;
+  }
+  /* main */
+  section > div > article > div {
+    padding: 40px 50px 40px;
+  }
+  section > div > article > div > h4 {
+    font: bold 50px/50px "Hahmlet", sans-serif;
+    margin-bottom: 30px;
+  }
+  section > div > article > div > p {
+    font: 35px/35px "Hahmlet", sans-serif;
+  }
+  section > div > article > div > p > span {
+    font: 40px "Hahmlet", sans-serif;
+  }
+  /* 각각의 틀린부분 */
+  div#box03 > article > div > h4 {
+    margin-bottom: 30px;
+  }
+  div#box03 > article > div > p {
+    font: 40px/70px "Nanum Pen Script", sans-serif;
+  }
+  div#box04 > article > div > h4 {
+    margin-bottom: 30px;
+  }
+  div#box04 > article > div > p {
+    font: 40px/60px "Nanum Pen Script", sans-serif;
+  }
+  /* footer */
+  #footerWrap {
+    padding: 26px 0 26px;
+  }
+  footer > dl {
+    margin-bottom: 25px;
+  }
+  footer > dl > dt > img {
+    width: 150px;
+  }
+  footer > dl > dd > ul {
+  }
+  footer > dl > dd > ul > li {
+    padding: 0 20px;
+  }
+  footer > div {
+    width: 100%;
+  }
+  /*  */
+}
+/* 태블릿 */
+@media screen and (max-width: 779px) and (min-width: 480px) {
+  .cursor {
+    display: none;
+  }
+  /* header */
+  #headerWrap {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100px;
+  }
+
+  #headerWrap > div {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+  }
+  #headerWrap > div > header {
+    position: relative;
+    width: 100%;
+    padding: 0px 0;
+  }
+  header > h1 > a > img {
+    width: 150px;
+  }
+  header > nav {
+    float: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(214, 212, 212);
+    padding: 0 0;
+  }
+  #mainUl {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  #mainUl > li {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    position: inherit;
+    padding-right: 0px;
+    text-align: center;
+    font: 25px "Hahmlet", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    background-color: rgb(59, 59, 59);
+  }
+  #mainUl > li > ul {
+    position: inherit;
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+  }
+  #mainUl > li > ul > li {
+    border-bottom: none;
+  }
+  #mainUl > li > ul > li > a {
+    font: 14px/30px "Hahmlet", sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  #mainUl > li > ul > li > a:hover {
+    background-color: #fff;
+    color: rgb(252, 102, 102);
+  }
+  header > nav > ul:nth-child(4) {
+    display: none;
+  }
+  header > #btn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+  }
+  header > #btn > span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(59, 59, 59);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header > #btn > span:nth-child(2) {
+    top: 33%;
+  }
+  header > #btn > span:nth-child(3) {
+    top: 66%;
+  }
+  #close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+  }
+  #close > span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+  }
+  #close > span:nth-child(1) {
+    transform: rotate(-135deg) translateX(0%);
+  }
+  #close > span:nth-child(2) {
+    transform: rotate(135deg) translateX(0%);
+  }
+  header > nav > ul:nth-child(2) > li.selected {
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 59, 59);
+  }
+  /* main */
+  div#Acmer > h3 {
+    font: 30px/50px "Hahmlet", sans-serif;
+  }
+  div#Acmer > h3 > span {
+    font: bold 50px/70px "Hahmlet", sans-serif;
+  }
+  /* section  공통부분 */
+  section > div > article {
+    /* width: 1200px; */
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  section > div > article > div {
+    position: absolute;
+    width: 90%;
+    padding: 40px 50px 40px;
+    box-sizing: border-box;
+    background-color: rgba(61, 61, 61, 0.075);
+  }
+  section > div > article > div > h4 {
+    font: bold 50px/70px "Hahmlet", sans-serif;
+    color: #fff;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+  section > div > article > div > p {
+    font: 30px/30px "Hahmlet", sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  section > div > article > div > p > span {
+    font: 35px "Hahmlet", sans-serif;
+    color: #fff;
+  }
+  /* 각각의 틀린부분 */
+  div#box01 > article > img {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 50%;
+    transform: translate(-50%, 0%);
+  }
+  div#box01 > article > div {
+    left: 50%;
+    bottom: 5%;
+    height: 45%;
+    transform: translate(-50%, 0%);
+  }
+  div#box02 > article > img {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 50%;
+    transform: translate(-50%, 0%);
+  }
+  div#box02 > article > div {
+    left: 50%;
+    top: 70%;
+    height: 45%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+  div#box03 > article > img {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 70%;
+    transform: translate(0%, -50%);
+    z-index: 999;
+  }
+  div#box03 > article > div {
+    width: 60%;
+    right: 0;
+    top: 0px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  div#box03 > article > div > h4 {
+    padding-top: 100px;
+    margin-bottom: 30px;
+    text-align: right;
+    color: rgb(47, 255, 255);
+  }
+  div#box03 > article > div > p {
+    font: 40px/50px "Nanum Pen Script", sans-serif;
+    color: rgb(47, 255, 255);
+    text-align: right;
+  }
+  div#box03 > article > div > p > span {
+    color: rgb(47, 255, 255);
+    font: 30px "Hahmlet", sans-serif;
+  }
+  div#box04 > article > img {
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    width: 70%;
+    transform: translate(0%, -50%);
+    z-index: 999;
+  }
+  div#box04 > article > div {
+    left: 0%;
+    top: 50%;
+    width: 75%;
+    transform: translate(0%, -50%);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  div#box04 > article > div > h4 {
+    padding-top: 100px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: rgb(47, 255, 255);
+  }
+  div#box04 > article > div > p {
+    font: 30px/40px "Nanum Pen Script", sans-serif;
+    text-align: left;
+    color: rgb(47, 255, 255);
+  }
+  div#box04 > article > div > p > span {
+    color: rgb(47, 255, 255);
+    font: 30px "Hahmlet", sans-serif;
+  }
+  /* aside */
+  aside {
+    position: fixed;
+    right: 50%;
+    top: 110px;
+    transform: translate(50%, 0%);
+    z-index: 999;
+  }
+  aside > ul > li {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  /* footer */
+  #footerWrap {
+    padding: 26px 0 26px;
+    background-color: rgb(66, 66, 66);
+  }
+  footer > dl {
+    margin-bottom: 20px;
+  }
+  footer > dl > dt {
+    float: none;
+  }
+  footer > dl > dt > img {
+    display: none;
+  }
+  footer > dl > dd {
+    float: none;
+    padding-top: 0px;
+  }
+
+  footer > dl > dd > ul > li {
+    padding: 0 10px;
+  }
+  footer > div {
+    width: 100%;
+  }
+
+  /*  */
+}
+/* 모바일 */
+@media screen and (max-width: 479px) {
+  .cursor {
+    display: none;
+  }
+  /* header */
+  #headerWrap {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100px;
+  }
+
+  #headerWrap > div {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+  }
+  #headerWrap > div > header {
+    position: relative;
+    width: 100%;
+    padding: 0px 0;
+  }
+  header > h1 {
+    float: none;
+  }
+  header > h1 > a > img {
+    width: 100px;
+    height: 100px;
+  }
+  header > nav {
+    float: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(214, 212, 212);
+    padding: 0 0;
+  }
+  #mainUl {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  #mainUl > li {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    position: inherit;
+    padding-right: 0px;
+    text-align: center;
+    font: 25px "Hahmlet", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    background-color: rgb(59, 59, 59);
+  }
+  #mainUl > li > ul {
+    position: inherit;
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+  }
+  #mainUl > li > ul > li {
+    border-bottom: none;
+  }
+  #mainUl > li > ul > li > a {
+    font: 14px/30px "Hahmlet", sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  #mainUl > li > ul > li > a:hover {
+    background-color: #fff;
+    color: rgb(252, 102, 102);
+  }
+  header > nav > ul:nth-child(4) {
+    display: none;
+  }
+  header > #btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  header > #btn > span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(59, 59, 59);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header > #btn > span:nth-child(2) {
+    top: 50%;
+  }
+  header > #btn > span:nth-child(3) {
+    top: 100%;
+  }
+  #close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  #close > span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+  }
+  #close > span:nth-child(1) {
+    transform: rotate(-135deg) translateX(0%);
+  }
+  #close > span:nth-child(2) {
+    transform: rotate(135deg) translateX(0%);
+  }
+  header > nav > ul:nth-child(2) > li.selected {
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 59, 59);
+  }
+  /* main */
+  div#Acmer > h3 {
+    font: 25px/30px "Hahmlet", sans-serif;
+  }
+  div#Acmer > h3 > span {
+    font: bold 40px/50px "Hahmlet", sans-serif;
+  }
+  /* section  공통부분 */
+  section > div > article {
+    /* width: 1200px; */
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  section > div > article > div {
+    position: absolute;
+    width: 90%;
+    padding: 10px 20px 10px;
+    box-sizing: border-box;
+    background-color: rgba(61, 61, 61, 0.075);
+  }
+  section > div > article > div > h4 {
+    font: bold 40px/50px "Hahmlet", sans-serif;
+    color: #fff;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+  section > div > article > div > p {
+    font: 25px/25px "Hahmlet", sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  section > div > article > div > p > span {
+    font: 30px "Hahmlet", sans-serif;
+    color: #fff;
+  }
+  /* 각각의 틀린부분 */
+  div#box01 > article > img {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 50%;
+    transform: translate(-50%, 0%);
+  }
+  div#box01 > article > div {
+    left: 50%;
+    bottom: 5%;
+    height: 45%;
+    transform: translate(-50%, 0%);
+  }
+  div#box02 > article > img {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 50%;
+    transform: translate(-50%, 0%);
+  }
+  div#box02 > article > div {
+    left: 50%;
+    top: 70%;
+    height: 45%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+  div#box03 > article > img {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    width: 70%;
+    transform: translate(-50%, 0%);
+    z-index: 999;
+  }
+  div#box03 > article > div {
+    width: 100%;
+    right: 0;
+    top: 30%;
+    /* transform: translate(0%, -70%); */
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  div#box03 > article > div > h4 {
+    padding-top: 100px;
+    margin-bottom: 20px;
+    color: rgb(108, 108, 108);
+  }
+  div#box03 > article > div > p {
+    font: 30px/30px "Nanum Pen Script", sans-serif;
+    color: rgb(108, 108, 108);
+  }
+  div#box03 > article > div > p > span {
+    color: rgb(108, 108, 108);
+    font: 30px "Hahmlet", sans-serif;
+  }
+  div#box04 > article > img {
+    position: absolute;
+    right: 50%;
+    top: 5%;
+    width: 70%;
+    transform: translate(50%, 0%);
+    z-index: 999;
+  }
+  div#box04 > article > div {
+    left: 0%;
+    top: 25%;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  div#box04 > article > div > h4 {
+    padding-top: 100px;
+    margin-bottom: 10px;
+    color: rgb(108, 108, 108);
+  }
+  div#box04 > article > div > p {
+    font: 30px/30px "Nanum Pen Script", sans-serif;
+    color: rgb(108, 108, 108);
+  }
+  div#box04 > article > div > p > span {
+    color: rgb(108, 108, 108);
+    font: 30px "Hahmlet", sans-serif;
+  }
+  /* aside */
+  aside {
+    display: none;
+  }
+  /* footer */
+  #footerWrap {
+    padding: 26px 0 26px;
+    background-color: rgb(66, 66, 66);
+  }
+  footer > dl {
+    display: none;
+  }
+  footer > div {
+    width: 100%;
+  }
+  footer > div > address {
+    display: none;
+  }
+  footer > div > dl {
+    display: none;
+  }
+  footer > div > small {
+    color: #fff;
+    text-align: center;
+  }
+  /*  */
+}

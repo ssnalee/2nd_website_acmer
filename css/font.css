@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'NotoB';
+    src: url('../font/NotoSerifKR-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoM';
+    src: url('../font/NotoSerifKR-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoL';
+    src: url('../font/NotoSerifKR-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('../font/Lobster-Regular.ttf') format('truetype');
+}

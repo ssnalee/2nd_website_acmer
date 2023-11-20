@@ -1,0 +1,251 @@
+@charset "utf-8";
+.hideClass {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    visibility: hidden;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+  }
+  
+  #Wrap {
+    position: relative;
+  }
+  /* header */
+  #headerWrap {
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 149px;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9995;
+  }
+  
+  #headerWrap > div {
+    width: 100%;
+    height: 149px;
+    background-color: rgb(255, 255, 255);
+  }
+  #headerWrap > div > header {
+    /* width: 1200px; */
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+  }
+  header > h1 {
+    float: left;
+  }
+  header > h1 > a > img {
+    width: 200px;
+  }
+  header > nav {
+    float: right;
+    width: 897px;
+    position: relative;
+    padding-top: 68px;
+  }
+  #mainUl {
+    display: flex;
+  }
+  #mainUl > li {
+    margin-right: 15px;
+    position: relative;
+    display: block;
+    padding-right: 30px;
+    font: 14px 'Hahmlet', sans-serif;
+    color: #000;
+  }
+  #mainUl > li > ul {
+    position: absolute;
+    left: 0;
+    top: 66px;
+    display: none;
+  }
+  #mainUl > li > ul > li {
+    border-bottom: 1px dotted rgb(230, 227, 227);
+  }
+  #mainUl > li > ul > li > a {
+    font: 14px/30px 'Hahmlet', sans-serif;
+    color: #000;
+  }
+  #mainUl > li > ul > li > a:hover{
+    color:rgb(255, 0, 0);
+  }
+  header > nav > ul:nth-child(4) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header > nav > ul:nth-child(4) > li {
+    display: inline-block;
+    margin-left: 26px;
+  }
+  header > nav > ul:nth-child(4) > li > a {
+    font: 14px 'Hahmlet', sans-serif;
+    color: #000;
+  }
+  /* main */
+  main{
+      background-color: antiquewhite;
+  }
+  section{
+      /* width: 1200px; */
+      width: 95%;
+      padding-top:149px;
+      margin: 0 auto;
+      height: 100vh;
+  }
+  section>h3{
+    text-align: center;
+    font: 60px/80px "Hahmlet", sans-serif;
+    padding:40px 0;
+    color: #fff;
+    /* text-shadow: rgb(167, 165, 165) 1px 0 5px; */
+  }
+  .shopList{
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+  }
+  .shopList>ul{
+      font-size: 0;
+  }
+  .shopList>ul>li{
+      display: inline-block;
+      vertical-align: top;
+      width: 24%;
+  }
+  .shopList li>a{
+      display: block;
+      width: auto;
+      margin:5px;
+  }
+  .shopList li>a:hover .top{
+      bottom:52%;
+    }
+  .shopList li>a:hover .bottom{
+      top:52%;
+    }
+  .screen{
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+  }
+  .screen::after{
+      content: '';
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      opacity: 0;
+      transition: all .35s;
+  }
+  .shopList li>a:hover .screen::after{
+      opacity: 1;
+  }
+  .top{
+      position: absolute;
+      bottom: 150%;
+      left:50%;
+      transform: translate(-50%, 0);
+      z-index: 2;
+      color:#fff;
+      font: 26px "Hahmlet", sans-serif;
+      transition: all .35s;
+  }
+  .bottom{
+      position: absolute;
+      top:150%;
+      left:30px;
+      transform: translate(30px, 0);
+      z-index:2;
+      color:#fff;
+      font: 12px "Hahmlet", sans-serif;
+      transition: all .35s;
+  }
+  .screen>img{
+      /* width: 100%; */
+      height: 300px;
+      margin: 0 70px;
+  }
+  .shopList>ul>li>a h4{
+      font: 14px "Hahmlet", sans-serif;
+      padding:20px;
+      color:rgb(0, 0, 0);
+      text-align: center;
+  }
+  /* footer */
+#footerWrap {
+    padding: 26px 0 70px;
+    background-color: rgb(130, 130, 130);
+  }
+  #footerWrap > footer {
+    /* width: 1200px; */
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  footer > dl {
+    margin-bottom: 25px;
+  }
+  footer > dl > dt {
+    float: left;
+  }
+  footer > dl > dt > img {
+    width: 250px;
+    /* height: 140px; */
+  }
+  footer > dl > dd {
+    float: right;
+    padding-top: 40px;
+  }
+  footer > dl > dd > ul {
+  }
+  footer > dl > dd > ul > li {
+    display: inline-block;
+    border-left: 1px solid #fff;
+    padding: 0 29px;
+  }
+  footer > dl > dd > ul > li:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+  footer > dl > dd > ul > li > a {
+    font: 14px 'Hahmlet', sans-serif;
+    color: #000;
+  }
+  footer > div {
+    clear: both;
+    width: 766px;
+    float: left;
+    font: 14px/22px 'Hahmlet', sans-serif;
+  }
+  footer > div > address {
+    display: inline;
+    font-style: normal;
+  }
+  footer > div > dl {
+    display: inline;
+  }
+  footer > div > dl > dt {
+    display: inline;
+  }
+  footer > div > dl > dd {
+    display: inline;
+  }
+  footer > div > small {
+    display: block;
+  }
+  
